@@ -104,11 +104,7 @@ const Container = styled.div`
 
 const Main = styled.main`
   min-height: 100vh;
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.7)
-  );
+  background-color: #718096;
   padding: 30px;
 `;
 
@@ -130,14 +126,14 @@ const SearchInput = styled.input`
 
   outline: none;
   border: 2px solid rgba(249, 249, 249, 0.4);
-  box-shadow: 0 26px 30px -10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 26px 30px -10px rgba(0, 0, 0, 0.4);
   transition: all 250ms;
 
   &:focus {
     border: 2px solid #fff;
     transform: scale(1.02);
-    box-shadow: 0 35px 40px -12px rgba(0, 0, 0, 0.7);
-    background-color: rgba(249, 249, 249, 0.7);
+    box-shadow: 0 35px 40px -12px rgba(0, 0, 0, 0.4);
+    background-color: rgba(249, 249, 249, 0.6);
   }
 `;
 
@@ -154,6 +150,7 @@ const Button = styled.button`
   color: #fff;
   box-shadow: 0 26px 30px -10px rgba(0, 0, 0, 0.7);
   transition: all 250ms;
+  z-index: 10;
 
   &:focus {
     border: 2px solid #fff;
@@ -201,7 +198,8 @@ const Temperature = styled.div`
   font-weight: 900;
   border-radius: 10px;
   padding: 20px;
-  text-shadow: 3px 5px rgba(50, 50, 60, 0.5);
+  background-color: #cbd5e0;
+  text-shadow: 3px 5px rgba(40, 50, 100, 0.8);
   box-shadow: 0 26px 30px -10px rgba(0, 0, 0, 0.5);
 `;
 
